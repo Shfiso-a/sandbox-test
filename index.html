@@ -21,14 +21,16 @@
             border: 2px solid #555;
             background-color: #000;
             cursor: crosshair;
-            image-rendering: pixelated;
+            image-rendering: pixelated; 
             width: 80vmin;
             height: 80vmin;
         }
         #controls {
             margin-top: 20px;
             display: flex;
+            flex-wrap: wrap;
             gap: 10px;
+            justify-content: center;
             align-items: center;
         }
         button {
@@ -59,6 +61,8 @@
         <button id="sand-btn" class="active">Sand</button>
         <button id="water-btn">Water</button>
         <button id="stone-btn">Stone</button>
+        <button id="plant-btn">Plant</button>
+        <button id="fire-btn">Fire</button>
         <button id="eraser-btn">Eraser</button>
         <div id="brush-size-control">
             <label for="brushSize">Size:</label>
@@ -66,6 +70,7 @@
         </div>
         <button id="reset-btn">Reset</button>
     </div>
-    <script src="game.js"></script>
+    <script src="g2.js"></script>
 </body>
 </html>
+
